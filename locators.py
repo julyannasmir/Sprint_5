@@ -28,9 +28,10 @@ class Locators:
     BUNS_BUTTON = (By.XPATH, "//span[contains(text(),'Булки')]")  # Кнопка "Булки"
     SAUCES_BUTTON = (By.XPATH, "//span[contains(text(),'Соусы')]")  # Кнопка "Соусы"
     FILLINGS_BUTTON = (By.XPATH, "//span[contains(text(),'Начинки')]")  # Кнопка "Начинки"
-    BUNS_SECTION_INDICATOR = (By.XPATH, "/html//div[@id='root']//section[@class='BurgerIngredients_ingredients__1N8v2']/div[1]/div[1]")  # Таб "Булки" в меню
-    SAUCES_SECTION_INDICATOR = (By.XPATH, "/html//div[@id='root']//section[@class='BurgerIngredients_ingredients__1N8v2']/div[1]/div[2]")  # Таб "Соусы" в меню
-    FILLINGS_SECTION_INDICATOR = (By.XPATH, "/html//div[@id='root']//section[@class='BurgerIngredients_ingredients__1N8v2']/div[1]/div[3]")  # Таб "Начинки" в меню
+    BUNS_SECTION_INDICATOR = (By.XPATH, "//span[contains(text(),'Булки')]/parent::div")  # Таб "Булки" в меню
+    SAUCES_SECTION_INDICATOR = (By.XPATH, "//span[contains(text(),'Соусы')]/parent::div")  # Таб "Соусы" в меню
+    FILLINGS_SECTION_INDICATOR = (By.XPATH, "//span[contains(text(),'Начинки')]/parent::div")  # Таб "Начинки" в меню
+    CURRENT_SECTION = 'tab_tab_type_current__2BEPc'
 
 
 
